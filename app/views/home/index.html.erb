@@ -1,0 +1,13 @@
+<h1>Page Home</h1>
+<p>
+	<% if member_signed_in? %>
+
+		<%= link_to 'Se Deconnecter', destroy_member_session_path, method: :delete  %>
+
+	<% else %>
+
+		<%= link_to 'Se Connecter', new_member_session_path  %>
+
+	<% end %>
+
+</p>
